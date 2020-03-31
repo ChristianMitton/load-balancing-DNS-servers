@@ -140,7 +140,7 @@ def server():
         while time.time() - start_time < 5 and not any_thread_done.is_set():
             time.sleep(0.1)
 
-        global result
+        # global result
 
         if result is None:
             print "Error"

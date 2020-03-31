@@ -85,7 +85,7 @@ def server():
             # print "[TS2]: Could not find domain. Sending '" + serverMsg + "' back to server\n"
             # ls_socket.send(serverMsg.encode('utf-8'))
         else:
-            serverMsg = dns_ipaddress
+            serverMsg = dns_ipaddress + " " + host
             print "[TS2]: Found domain.\n> Sending '" + serverMsg + "' back to LS server\n"
             ls_socket.send(serverMsg.encode('utf-8'))        
 
