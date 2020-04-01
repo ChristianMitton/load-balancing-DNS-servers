@@ -57,7 +57,7 @@ def send_to_ts(stop_thread, socket, client_domain, host_name, listen_port):
     try:
         ts = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # print("[C]: Client socket created")
-    except ts1.error as err:
+    except ts.error as err:
         print('{} \n'.format("socket open error ",err))
 
     connection = (socket.gethostbyname(host_name), listen_port)
